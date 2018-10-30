@@ -1,5 +1,8 @@
-<% @users.each do |u| %>
+<ol> 
+  <%  @users.each do |u| %>
+    <li><%= u.name %></li>
+  <% end %>
+</ol>
 
-    <p><%= u.name %></p>
 
-<% end %>
+
