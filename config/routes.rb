@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   resource :home, only: [:index, :show]
   root to: 'home#index'
 
+  resources :posts, only: [:index]
+
+  root to: 'posts#index'
+
   #def resource(action, options={})
 
   #end
